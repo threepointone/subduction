@@ -4,4 +4,6 @@
 /public
 /examples/chat/pkg
 /examples/workspace/pkg
+/site/demo/pkg
+/site/demo/automerge.js
 .wrangler

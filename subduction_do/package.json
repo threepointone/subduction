@@ -5,6 +5,7 @@
   "description": "Subduction sync layer running on a Cloudflare Durable Object",
   "scripts": {
     "build:site": "bash ./scripts/build-site.sh",
+    "vendor:automerge": "node ./scripts/vendor-automerge.mjs",
     "dev": "npm run build:site && wrangler dev",
     "deploy": "npm run build:site && wrangler deploy",
     "build:chat": "bash ./scripts/build-chat.sh",
@@ -14,6 +15,8 @@
     "mint:jwt": "node ./scripts/mint-service-jwt.mjs"
   },
   "devDependencies": {
+    "@automerge/automerge": "^2.2.9",
+    "esbuild": "^0.28.1",
     "wasm-pack": "^0.15.0",
     "wrangler": "^4.110.0"
   },
